@@ -18,6 +18,72 @@
     />
   </head>
   <body>
+    <div class="container mt-5">
+      <h2>Bài tập 1: Tính thuế thu nhập cá nhân</h2>
+      <div>
+        <input id="name" class="mt-2" placeholder="Họ và Tên" type="text" />
+      </div>
+      <div>
+        <input
+          id="income"
+          class="mt-2"
+          placeholder="Tổng thu nhập năm"
+          type="number"
+        />
+      </div>
+      <div>
+        <input
+          id="people"
+          class="mt-2"
+          placeholder="Số người phụ thuộc"
+          type="number"
+        />
+      </div>
+      <div>
+        <button id="tinhThue" class="btn btn-success mt-2">Tính thuế</button>
+      </div>
+      <div><p class="mt-2" id="baoCaoThue"></p></div>
+    </div>
+
+    <div class="container mt-5">
+      <h2>Bài tập 2: Tính tiền cáp</h2>
+      <div>
+        <select id="typeCustomer" onchange="loaiKH()">
+          <option value="">Chọn loại khách hàng</option>
+          <option value="Nhà Dân">Nhà Dân</option>
+          <option value="Doanh Nghiệp">Doanh Nghiệp</option>
+        </select>
+      </div>
+      <div>
+        <input
+          id="customerCode"
+          class="mt-2"
+          placeholder="Nhập mã khách hàng"
+          type="text"
+        />
+      </div>
+      <div>
+        <input
+          id="numChannel"
+          class="mt-2"
+          placeholder="Số kênh cao cấp"
+          type="number"
+        />
+      </div>
+      <div id="box">
+        <input
+          id="numConnection"
+          class="mt-2"
+          placeholder="Số kết nối"
+          type="number"
+          style="display: none"
+        />
+      </div>
+      <div>
+        <button id="tinhTien" class="btn btn-success mt-2">Tính thuế</button>
+      </div>
+      <div><p class="mt-2" id="thongBao"></p></div>
+    </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
